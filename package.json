@@ -1,0 +1,15 @@
+{
+  "name": "pokemon_list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "tsc script.ts",
+    "start": "browser-sync start --server --files 'index.html' 'script.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.2.16"
+  }
+}

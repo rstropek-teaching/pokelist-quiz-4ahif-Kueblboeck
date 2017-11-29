@@ -14,15 +14,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pokemon List</title>
+    <link rel="stylesheet" type="text/css" href="css\bulma-0.6.1\css\bulma.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images\favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./script.js"></script>
+    <style>
+    </style>
 </head>
 
-<center>
-    <div id="pokemons"></div>
-    <button onclick="nextPage()">click to display next 20 pokemon</button>
-    <button onclick="previousPage()">click to display the previous 20 pokemon</button>
-</center>
+<section class="backGround">
+    <div class="hero is-fullheight">
+        <div class="hero-head">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 has-text-black">
+                    Pokemon List
+                </h1>
+            </div>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div id="pokemons"></div>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered">
+                <button class="button is-danger" onclick="navigate(1)">click to display next 20 pokemon</button>
+                <button class="button is-danger" onclick="navigate(2)">click to display the previous 20 pokemon</button>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="myModal" class="modal container has-text-centered" style="display: none">
+    <div class="modal-content">
+        <div id="pokeName"></div>
+        <div id="pokeWeight"></div>
+        <div id="pokeImage"></div>
+        <div id="pokeAbilities"></div>
+    </div>
+</div>
 
 
 </html>
